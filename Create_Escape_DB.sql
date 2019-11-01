@@ -51,7 +51,7 @@ CREATE TABLE Access
 );
 
 #INSERTIT TÄHÄN
-INSERT INTO ROOM (Room_ID, Name, Room_Description, Visited, Map_Coordinates) VALUES
+INSERT INTO Room (Room_ID, Name, Room_Description, Visited, Map_Coordinates) VALUES
 (1, '???', 'You are in a room, there is a computer on the table. There is a door to the east with a keypad next to it.', True, '0,30,60,90'),
 (2, 'Boiler room', 'You are in a boiler room, it´s quite hot in here. There is a spiral staircase leading up.', False, '60,30,120,90'),
 (3, 'Lobby', 'You are in the Lobby, there is a spiral staircase leading up and down, there are also doors to the east, west and south.', False, '60,60,150,120'),
@@ -135,7 +135,7 @@ INSERT INTO Access (Access_Source_ID, Direction, Access_Target_ID, Locked, Descr
 (20, 'N', 15, False, False),
 (20, 'W', 19, False, False);
 
-INSERT INTO ITEM(Name,Technical_name,description,room_id,available,takeable, carried) VALUES
+INSERT INTO Item(Name,Technical_name,description,room_id,available,takeable, carried) VALUES
 ( 'Bob doll', 'Bob','A china doll with the name "bob" on its nametag', 11,FALSE,TRUE,FALSE),
 ( 'Martha doll', 'Martha','A china doll with the name "Martha" on its nametag', 2,FALSE,TRUE,FALSE),
 ( 'Karen doll', 'Karen','A china doll with the name "Karen" on its nametag', 19,FALSE,TRUE,FALSE),
